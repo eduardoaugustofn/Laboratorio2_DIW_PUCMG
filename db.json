@@ -47,7 +47,8 @@
       "valorDiaria": 140,
       "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Fiat_Argo_2017b_%28cropped%29.jpg/500px-Fiat_Argo_2017b_%28cropped%29.jpg",
       "descricao": "Argo é um automóvel hatch da Fiat, que foi lançado no Brasil no dia 31 de maio de 2017, para substituir o Punto, Bravo e o Palio. Seu nome remete ao mito grego de Jasão e os Argonautas que viajavam a bordo da nau Argo, construída pelo semideus Argos, sob orientação da deusa Atena.",
-      "fonte": "https://pt.wikipedia.org/wiki/Fiat_Argo"
+      "fonte": "https://pt.wikipedia.org/wiki/Fiat_Argo",
+      "categoria": "Popular"
     },
     {
       "id": 2,
@@ -59,7 +60,8 @@
       "valorDiaria": 190,
       "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Volkswagen_Polo_VI_GTI_%282021%29_1X7A0344.jpg/500px-Volkswagen_Polo_VI_GTI_%282021%29_1X7A0344.jpg",
       "descricao": "O Volkswagen Polo é um automóvel fabricado pela Volkswagen no Brasil desde 2002, e na Alemanha desde 1974.",
-      "fonte": "https://pt.wikipedia.org/wiki/Volkswagen_Polo"
+      "fonte": "https://pt.wikipedia.org/wiki/Volkswagen_Polo",
+      "categoria": "Popular"
     },
     {
       "id": 3,
@@ -71,7 +73,8 @@
       "valorDiaria": 135,
       "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Chevrolet_Onix_II_front_Brazil.jpg/500px-Chevrolet_Onix_II_front_Brazil.jpg",
       "descricao": "Chevrolet Onix é um automóvel hatchback, sedan e notchback do segmento B, produzido pela Chevrolet; desenvolvido e fabricado pela General Motors do Brasil. Em 2013, foi apresentado no Salão do Automóvel de São Paulo, sendo uma das atrações da Chevrolet.",
-      "fonte": "https://pt.wikipedia.org/wiki/Chevrolet_Onix"
+      "fonte": "https://pt.wikipedia.org/wiki/Chevrolet_Onix",
+      "categoria": "Popular"
     },
     {
       "id": 4,
@@ -83,7 +86,8 @@
       "valorDiaria": 290,
       "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Toyota_Corolla_Limousine_Hybrid_Genf_2019_1Y7A5576.jpg/500px-Toyota_Corolla_Limousine_Hybrid_Genf_2019_1Y7A5576.jpg",
       "descricao": "Toyota Corolla é um modelo de segmento C da Toyota oferecido em versões sedã, hatchback e perua. Também é o modelo mais vendido da história dos automóveis, com produção nos cinco continentes e vendas totais superiores a 50 milhões de automóveis desde seu lançamento, em 1966.",
-      "fonte": "https://pt.wikipedia.org/wiki/Toyota_Corolla"
+      "fonte": "https://pt.wikipedia.org/wiki/Toyota_Corolla",
+      "categoria": "Popular"
     },
     {
       "id": 5,
@@ -95,7 +99,8 @@
       "valorDiaria": 150,
       "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/2023_Hyundai_HB20_1.0_T-GDi_Platinum_Plus_%28Brazil%29_front_view.png/500px-2023_Hyundai_HB20_1.0_T-GDi_Platinum_Plus_%28Brazil%29_front_view.png",
       "descricao": "O HB20 é um hatch compacto do segmento B o primeiro carro popular da Hyundai fabricado no Brasil e cujo lançamento ocorreu no dia 12 de setembro de 2012.",
-      "fonte": "https://pt.wikipedia.org/wiki/Hyundai_HB20"
+      "fonte": "https://pt.wikipedia.org/wiki/Hyundai_HB20",
+      "categoria": "Popular"
     },
     {
       "id": 6,
@@ -107,7 +112,194 @@
       "valorDiaria": 260,
       "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Jeep_Renegade_4xe_1X7A6026.jpg/500px-Jeep_Renegade_4xe_1X7A6026.jpg",
       "descricao": "O Renegade é um SUV crossover compacto, produzido pela Jeep, bandeira da Stellantis, lançado em 2014. É fabricado em Melfi e também em Rüsselsheim, e em Goiana, PE, Brasil, tendo sua produção começado em março de 2015.",
-      "fonte": "https://pt.wikipedia.org/wiki/Jeep_Renegade"
+      "fonte": "https://pt.wikipedia.org/wiki/Jeep_Renegade",
+      "categoria": "Popular"
+    },
+    {
+      "id": 7,
+      "matricula": "MAT-0007",
+      "ano": 2020,
+      "marca": "Lamborghini",
+      "modelo": "Aventador S",
+      "placa": "LAM7A20",
+      "valorDiaria": 4800,
+      "categoria": "Super esportivo",
+      "descricao": "Esportivo italiano com motor V12 de 6,5 litros, produzido entre 2011 e 2022 como sucessor do Murciélago. Portas que abrem para cima e tração integral.",
+      "fonte": "https://pt.wikipedia.org/wiki/Lamborghini_Aventador",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Lamborghini_Aventador_S_Coup%C3%A9_%28ABA-47L539%29_front.jpg/960px-Lamborghini_Aventador_S_Coup%C3%A9_%28ABA-47L539%29_front.jpg",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:Lamborghini_Aventador_S_Coup%C3%A9_(ABA-47L539)_front.jpg",
+      "licenca": "CC BY-SA 4.0"
+    },
+    {
+      "id": 8,
+      "matricula": "MAT-0008",
+      "ano": 2019,
+      "marca": "Ferrari",
+      "modelo": "488 GTB",
+      "placa": "FER4A19",
+      "valorDiaria": 4200,
+      "categoria": "Super esportivo",
+      "descricao": "Berlinetta de motor central com V8 biturbo de 3,9 litros e cerca de 670 cv. Foi lançada em 2015 no lugar da 458.",
+      "fonte": "https://pt.wikipedia.org/wiki/Ferrari_488",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Ferrari_488_GTB_%28ABA-F142B%29_front.jpg/960px-Ferrari_488_GTB_%28ABA-F142B%29_front.jpg",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:Ferrari_488_GTB_(ABA-F142B)_front.jpg",
+      "licenca": "CC BY-SA 4.0"
+    },
+    {
+      "id": 9,
+      "matricula": "MAT-0009",
+      "ano": 2021,
+      "marca": "McLaren",
+      "modelo": "720S",
+      "placa": "MCL7A21",
+      "valorDiaria": 4500,
+      "categoria": "Super esportivo",
+      "descricao": "Superesportivo britânico com V8 biturbo de 4,0 litros e 720 cv, feito sobre um chassi monocoque de fibra de carbono. Apresentado em 2017.",
+      "fonte": "https://en.wikipedia.org/wiki/McLaren_720S",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/2020_McLaren_720S_front.jpg/960px-2020_McLaren_720S_front.jpg",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:2020_McLaren_720S_front.jpg",
+      "licenca": "CC BY-SA 4.0"
+    },
+    {
+      "id": 10,
+      "matricula": "MAT-0010",
+      "ano": 2022,
+      "marca": "Bugatti",
+      "modelo": "Chiron",
+      "placa": "BUG1A22",
+      "valorDiaria": 9500,
+      "categoria": "Super esportivo",
+      "descricao": "Hipercarro com motor W16 de 8,0 litros e quatro turbos, que passa de 1.500 cv. Sucessor do Veyron, foi produzido de 2016 a 2024.",
+      "fonte": "https://pt.wikipedia.org/wiki/Bugatti_Chiron",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/2018_Bugatti_Chiron_in_Exposed_Blue_Carbon%2C_front_right.jpg/960px-2018_Bugatti_Chiron_in_Exposed_Blue_Carbon%2C_front_right.jpg",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:2018_Bugatti_Chiron_in_Exposed_Blue_Carbon,_front_right.jpg",
+      "licenca": "CC BY-SA 3.0"
+    },
+    {
+      "id": 11,
+      "matricula": "MAT-0011",
+      "ano": 2018,
+      "marca": "Pagani",
+      "modelo": "Huayra",
+      "placa": "PAG1A18",
+      "valorDiaria": 7800,
+      "categoria": "Super esportivo",
+      "descricao": "Superesportivo italiano feito à mão, com V12 biturbo de origem Mercedes-AMG e carroceria de fibra de carbono. O nome vem de um deus do vento dos Andes.",
+      "fonte": "https://pt.wikipedia.org/wiki/Pagani_Huayra",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Pagani_Huayra_in_London_-_February_2014_-_front_view.JPG/960px-Pagani_Huayra_in_London_-_February_2014_-_front_view.JPG",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:Pagani_Huayra_in_London_-_February_2014_-_front_view.JPG",
+      "licenca": "CC BY-SA 3.0"
+    },
+    {
+      "id": 12,
+      "matricula": "MAT-0012",
+      "ano": 2023,
+      "marca": "Porsche",
+      "modelo": "911 GT3",
+      "placa": "POR9A23",
+      "valorDiaria": 3200,
+      "categoria": "Super esportivo",
+      "descricao": "Versão de pista do 911, com motor boxer de seis cilindros aspirado que gira perto de 9.000 rpm e câmbio de dupla embreagem.",
+      "fonte": "https://en.wikipedia.org/wiki/Porsche_911_GT3",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Porsche_911_GT3%2C_EMS_2024%2C_Essen_%28P1031698%29.jpg/960px-Porsche_911_GT3%2C_EMS_2024%2C_Essen_%28P1031698%29.jpg",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:Porsche_911_GT3,_EMS_2024,_Essen_(P1031698).jpg",
+      "licenca": "CC BY-SA 4.0"
+    },
+    {
+      "id": 13,
+      "matricula": "MAT-0013",
+      "ano": 1981,
+      "marca": "DeLorean",
+      "modelo": "DMC-12",
+      "placa": "BTF1A85",
+      "valorDiaria": 1800,
+      "categoria": "Cinema e TV",
+      "obra": "De Volta para o Futuro (1985)",
+      "descricao": "Esportivo de carroceria de aço inox e portas asa-de-gaivota, fabricado só em 1981 e 1982. No cinema virou a máquina do tempo de Doc Brown e Marty McFly.",
+      "fonte": "https://pt.wikipedia.org/wiki/DMC_DeLorean",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/DeLorean_DMC-12_front.jpg/960px-DeLorean_DMC-12_front.jpg",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:DeLorean_DMC-12_front.jpg",
+      "licenca": "CC BY-SA 4.0"
+    },
+    {
+      "id": 14,
+      "matricula": "MAT-0014",
+      "ano": 1959,
+      "marca": "Cadillac",
+      "modelo": "Ecto-1",
+      "placa": "ECT1A84",
+      "valorDiaria": 1500,
+      "categoria": "Cinema e TV",
+      "obra": "Os Caça-Fantasmas (1984)",
+      "descricao": "Cadillac de 1959 adaptado de ambulância, com sirene e equipamentos nas laterais, usado pela equipe dos Caça-Fantasmas. Um dos carros mais conhecidos do cinema.",
+      "fonte": "https://pt.wikipedia.org/wiki/Ecto-1",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/1959_Cadillac_Ecto-1_%2812227773836%29.jpg/960px-1959_Cadillac_Ecto-1_%2812227773836%29.jpg",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:1959_Cadillac_Ecto-1_(12227773836).jpg",
+      "licenca": "CC BY 2.0"
+    },
+    {
+      "id": 15,
+      "matricula": "MAT-0015",
+      "ano": 1966,
+      "marca": "Batman",
+      "modelo": "Batmóvel 1966",
+      "placa": "BAT1A66",
+      "valorDiaria": 3500,
+      "categoria": "Cinema e TV",
+      "obra": "Batman (série de TV, 1966)",
+      "descricao": "O carro do Batman na série de TV dos anos 60, construído por George Barris a partir do conceito Lincoln Futura, de 1955.",
+      "fonte": "https://pt.wikipedia.org/wiki/Batmóvel",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Comic_Con_Experience_-_2014_-_Batmobile_%281966%29.jpg/960px-Comic_Con_Experience_-_2014_-_Batmobile_%281966%29.jpg",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:Comic_Con_Experience_-_2014_-_Batmobile_(1966).jpg",
+      "licenca": "CC BY 2.0"
+    },
+    {
+      "id": 16,
+      "matricula": "MAT-0016",
+      "ano": 1982,
+      "marca": "Pontiac",
+      "modelo": "Firebird Trans Am (KITT)",
+      "placa": "KIT2A82",
+      "valorDiaria": 1400,
+      "categoria": "Cinema e TV",
+      "obra": "A Super Máquina (Knight Rider, 1982)",
+      "descricao": "Pontiac Firebird Trans Am preto com inteligência artificial e luz vermelha frontal que vai e volta. Era o parceiro de Michael Knight na série. A foto mostra uma réplica.",
+      "fonte": "https://en.wikipedia.org/wiki/KITT",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/A_black_Pontiac_Firebird_Trans_Am_built_to_mimic_KITT_from_the_TV_series_Knight_Rider.jpg/960px-A_black_Pontiac_Firebird_Trans_Am_built_to_mimic_KITT_from_the_TV_series_Knight_Rider.jpg",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:A_black_Pontiac_Firebird_Trans_Am_built_to_mimic_KITT_from_the_TV_series_Knight_Rider.jpg",
+      "licenca": "CC BY-SA 4.0"
+    },
+    {
+      "id": 17,
+      "matricula": "MAT-0017",
+      "ano": 1969,
+      "marca": "Dodge",
+      "modelo": "Charger General Lee",
+      "placa": "LEE0A69",
+      "valorDiaria": 1300,
+      "categoria": "Cinema e TV",
+      "obra": "Os Gatões (The Dukes of Hazzard, 1979)",
+      "descricao": "Dodge Charger 1969 laranja, com a bandeira no teto e o número 01 nas portas, que os primos Duke saltavam por cima de tudo. A foto mostra uma réplica.",
+      "fonte": "https://en.wikipedia.org/wiki/General_Lee_(car)",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/1969_Dodge_Charger_General_Lee_replica_front_%2820824814570%29.jpg/960px-1969_Dodge_Charger_General_Lee_replica_front_%2820824814570%29.jpg",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:1969_Dodge_Charger_General_Lee_replica_front_(20824814570).jpg",
+      "licenca": "CC BY-SA 2.0"
+    },
+    {
+      "id": 18,
+      "matricula": "MAT-0018",
+      "ano": 1963,
+      "marca": "Volkswagen",
+      "modelo": "Fusca Herbie",
+      "placa": "HRB5A53",
+      "valorDiaria": 650,
+      "categoria": "Cinema e TV",
+      "obra": "Se Meu Fusca Falasse (1968)",
+      "descricao": "Fusca de 1963 com o número 53 e listras vermelha e azul, o carro com vida própria dos filmes da Disney.",
+      "fonte": "https://pt.wikipedia.org/wiki/Herbie",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Herbie_film_car_from_The_Love_Bug.jpg/960px-Herbie_film_car_from_The_Love_Bug.jpg",
+      "fotoLink": "https://commons.wikimedia.org/wiki/File:Herbie_film_car_from_The_Love_Bug.jpg",
+      "licenca": "CC BY-SA 4.0"
     }
   ],
   "pedidos": [

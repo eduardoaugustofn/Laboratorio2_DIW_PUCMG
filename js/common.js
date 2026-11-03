@@ -98,8 +98,11 @@ function montarNavbar() {
   let direita = '';
   if (u) {
     const inicio = Sessao.paginaInicial(u);
-    links = `
-      <li class="nav-item"><a class="nav-link" href="${inicio}">${u.tipo === 'cliente' ? 'Meus pedidos' : 'Pedidos'}</a></li>
+    const itens = u.tipo === 'cliente'
+      ? `<li class="nav-item"><a class="nav-link" href="${inicio}#frota">Frota</a></li>
+         <li class="nav-item"><a class="nav-link" href="${inicio}#pedidos">Meus pedidos</a></li>`
+      : `<li class="nav-item"><a class="nav-link" href="${inicio}">Pedidos</a></li>`;
+    links = `${itens}
       <li class="nav-item"><a class="nav-link" href="cadastro.html">Meus dados</a></li>`;
     direita = `
       <span class="navbar-text me-3">${esc(u.nome)} <span class="text-secondary">(${ROTULO_TIPO[u.tipo]})</span></span>
@@ -110,7 +113,7 @@ function montarNavbar() {
       <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastrar</a></li>`;
   }
   topo.innerHTML = `
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md" data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">Aluguel de Carros</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
