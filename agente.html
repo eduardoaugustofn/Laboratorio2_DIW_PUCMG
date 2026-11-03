@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedidos - Aluguel de Carros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header id="topo"></header>
+
+  <main class="container py-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+      <div>
+        <h1 class="h4 mb-0">Pedidos de aluguel</h1>
+        <span class="text-secondary small">Análise financeira e execução dos contratos.</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <label for="filtro" class="form-label mb-0 small text-secondary">Status</label>
+        <select class="form-select form-select-sm" id="filtro">
+          <option value="">Todos</option>
+          <option>Em análise</option>
+          <option>Aprovado</option>
+          <option>Reprovado</option>
+          <option>Contrato executado</option>
+          <option>Cancelado</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card shadow-sm">
+      <div class="table-responsive">
+        <table class="table table-hover mb-0 tabela-pedidos">
+          <thead>
+            <tr>
+              <th>Nº</th>
+              <th>Cliente</th>
+              <th>Automóvel</th>
+              <th>Período</th>
+              <th>Crédito</th>
+              <th>Status</th>
+              <th class="text-end">Ações</th>
+            </tr>
+          </thead>
+          <tbody id="listaPedidos"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="modalAnalise" tabindex="-1" aria-labelledby="tituloAnalise" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <form id="formAnalise" novalidate>
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="tituloAnalise">Pedido</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <div id="erroAnalise" class="alert alert-danger py-2 d-none"></div>
+
+            <h3 class="h6 text-uppercase text-secondary">Contratante</h3>
+            <div id="dadosContratante" class="small mb-4"></div>
+
+            <h3 class="h6 text-uppercase text-secondary">Pedido</h3>
+            <div class="row g-3 mb-3">
+              <div class="col-12">
+                <label for="automovel" class="form-label">Automóvel</label>
+                <select class="form-select" id="automovel"></select>
+              </div>
+              <div class="col-md-6">
+                <label for="dataInicio" class="form-label">Retirada</label>
+                <input type="date" class="form-control" id="dataInicio">
+              </div>
+              <div class="col-md-6">
+                <label for="dataFim" class="form-label">Devolução</label>
+                <input type="date" class="form-control" id="dataFim">
+              </div>
+              <div class="col-md-6">
+                <label for="propriedade" class="form-label">Propriedade do automóvel</label>
+                <select class="form-select" id="propriedade">
+                  <option value="cliente">Cliente</option>
+                  <option value="empresa">Empresa</option>
+                  <option value="banco">Banco</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label d-block">Contrato de crédito</label>
+                <div class="form-check form-switch mb-2">
+                  <input class="form-check-input" type="checkbox" id="comCredito">
+                  <label class="form-check-label" for="comCredito">Associado a crédito</label>
+                </div>
+                <select class="form-select d-none" id="banco"></select>
+              </div>
+            </div>
+            <div class="border rounded p-2 bg-light small mb-3" id="resumo"></div>
+
+            <label for="parecer" class="form-label">Parecer financeiro</label>
+            <textarea class="form-control" id="parecer" rows="3" maxlength="500"></textarea>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+            <div class="d-flex gap-2" id="botoesAnalise">
+              <button type="button" class="btn btn-outline-dark" data-decisao="salvar">Salvar alterações</button>
+              <button type="button" class="btn btn-danger" data-decisao="Reprovado">Reprovar</button>
+              <button type="button" class="btn btn-success" data-decisao="Aprovado">Aprovar</button>
+              <button type="button" class="btn btn-primary" data-decisao="Contrato executado">Executar contrato</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/pedidos.js"></script>
+  <script src="js/agente.js"></script>
+</body>
+</html>

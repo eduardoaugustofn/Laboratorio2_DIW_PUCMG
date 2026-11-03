@@ -1,0 +1,59 @@
+body {
+  background-color: #f4f5f7;
+  min-height: 100vh;
+}
+
+.navbar-brand {
+  letter-spacing: 0.02em;
+}
+
+.cartao-login {
+  max-width: 420px;
+  margin: 64px auto;
+}
+
+.cartao-contas {
+  max-width: 420px;
+  margin: -40px auto 32px;
+  background: transparent;
+  border-style: dashed;
+}
+
+.cartao-cadastro {
+  max-width: 760px;
+  margin: 32px auto;
+}
+
+.tabela-pedidos th {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #5b6370;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.tabela-pedidos td {
+  vertical-align: middle;
+}
+
+.vazio {
+  padding: 40px 0;
+  color: #7a828e;
+  text-align: center;
+}
+
+#avisos {
+  position: fixed;
+  top: 70px;
+  right: 16px;
+  z-index: 2000;
+  width: 320px;
+  max-width: calc(100vw - 32px);
+}
+
+.rodape {
+  color: #7a828e;
+  font-size: 0.85rem;
+  padding: 24px 0;
+  text-align: center;
+}

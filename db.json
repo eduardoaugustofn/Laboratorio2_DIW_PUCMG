@@ -1,0 +1,56 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "tipo": "cliente",
+      "nome": "Mariana Souza Lima",
+      "email": "mariana@email.com",
+      "senha": "123456",
+      "rg": "MG-12.345.678",
+      "cpf": "52998224725",
+      "endereco": "Rua das Acácias, 120 - Coração Eucarístico, Belo Horizonte/MG",
+      "profissao": "Analista de sistemas",
+      "empregadores": [
+        { "nome": "Tecnova Soluções", "rendimento": 6800 },
+        { "nome": "Freelas Digitais", "rendimento": 1500 }
+      ]
+    },
+    {
+      "id": 2,
+      "tipo": "empresa",
+      "nome": "Locadora Horizonte",
+      "email": "contato@horizonte.com",
+      "senha": "123456"
+    },
+    {
+      "id": 3,
+      "tipo": "banco",
+      "nome": "Banco Alvorada",
+      "email": "credito@alvorada.com",
+      "senha": "123456"
+    }
+  ],
+  "automoveis": [
+    { "id": 1, "matricula": "MAT-0001", "ano": 2022, "marca": "Fiat", "modelo": "Argo 1.0", "placa": "QWE1A23", "valorDiaria": 140 },
+    { "id": 2, "matricula": "MAT-0002", "ano": 2023, "marca": "Volkswagen", "modelo": "Polo TSI", "placa": "RTY4B56", "valorDiaria": 190 },
+    { "id": 3, "matricula": "MAT-0003", "ano": 2021, "marca": "Chevrolet", "modelo": "Onix LT", "placa": "UIO7C89", "valorDiaria": 135 },
+    { "id": 4, "matricula": "MAT-0004", "ano": 2024, "marca": "Toyota", "modelo": "Corolla XEi", "placa": "ASD2D34", "valorDiaria": 290 },
+    { "id": 5, "matricula": "MAT-0005", "ano": 2022, "marca": "Hyundai", "modelo": "HB20 Comfort", "placa": "FGH5E67", "valorDiaria": 150 },
+    { "id": 6, "matricula": "MAT-0006", "ano": 2023, "marca": "Jeep", "modelo": "Renegade", "placa": "JKL8F90", "valorDiaria": 260 }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "clienteId": 1,
+      "automovelId": 3,
+      "dataInicio": "2026-11-20",
+      "dataFim": "2026-11-25",
+      "propriedade": "empresa",
+      "comCredito": true,
+      "bancoId": 3,
+      "status": "Em análise",
+      "parecer": "",
+      "criadoEm": "2026-11-02"
+    }
+  ]
+}
