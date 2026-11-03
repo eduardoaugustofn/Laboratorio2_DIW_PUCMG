@@ -42,9 +42,6 @@ async function carregar() {
 function desenharTopo() {
   q('statCarros').textContent = automoveis.length;
   q('statCategorias').textContent = new Set(automoveis.map((a) => a.categoria)).size;
-  // a faixa é repetida duas vezes para o loop da animação ficar contínuo
-  const nomes = automoveis.map((a) => `<span>${esc(a.marca)} ${esc(a.modelo)}</span>`).join('');
-  q('trilho').innerHTML = nomes + nomes;
 }
 
 function desenharFiltros() {

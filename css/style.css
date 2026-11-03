@@ -181,6 +181,7 @@ h1.h4, h2.h5, h3.h5, h3.h6 {
   background:
     radial-gradient(55% 90% at 100% 0%, rgba(109, 40, 217, 0.32), transparent 70%),
     var(--preto);
+  border-bottom: 1px solid var(--roxo-escuro);
 }
 
 .hero-chamada {
@@ -238,50 +239,6 @@ h1.h4, h2.h5, h3.h5, h3.h6 {
   letter-spacing: 0.08em;
 }
 
-/* faixa de nomes rolando */
-.faixa {
-  overflow: hidden;
-  padding: 14px 0;
-  background: #000;
-  border-top: 1px solid var(--borda);
-  border-bottom: 1px solid var(--roxo-escuro);
-}
-
-.trilho {
-  display: flex;
-  width: max-content;
-  animation: rolar 70s linear infinite;
-}
-
-.trilho span {
-  flex: none;
-  padding: 0 28px;
-  font-family: var(--fonte-titulo);
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--texto-suave);
-}
-
-.trilho span::after {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-left: 56px;
-  background: var(--roxo);
-  border-radius: 50%;
-  vertical-align: middle;
-}
-
-@keyframes rolar {
-  to { transform: translateX(-50%); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .trilho { animation: none; }
-}
 
 .titulo-secao {
   font-size: 1.25rem;
