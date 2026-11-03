@@ -4,7 +4,6 @@ const usuario = Sessao.exigir(['cliente']);
 const q = (id) => document.getElementById(id);
 
 const CATEGORIAS = ['Super esportivo', 'Cinema e TV', 'Popular'];
-const IMAGEM_HERO = 10; // id do carro usado como fundo do topo
 
 let automoveis = [];
 let bancos = [];
@@ -34,11 +33,18 @@ async function carregar() {
     aviso('Não foi possível carregar os dados.', 'danger');
     return;
   }
-  const destaque = achar(automoveis, IMAGEM_HERO);
-  if (destaque) q('hero').style.backgroundImage = `url("${destaque.foto}")`;
+  desenharTopo();
   desenharFiltros();
   desenharCatalogo();
   desenharLista();
+}
+
+function desenharTopo() {
+  q('statCarros').textContent = automoveis.length;
+  q('statCategorias').textContent = new Set(automoveis.map((a) => a.categoria)).size;
+  // a faixa é repetida duas vezes para o loop da animação ficar contínuo
+  const nomes = automoveis.map((a) => `<span>${esc(a.marca)} ${esc(a.modelo)}</span>`).join('');
+  q('trilho').innerHTML = nomes + nomes;
 }
 
 function desenharFiltros() {

@@ -10,6 +10,7 @@
   --roxo-claro: #c4b5fd;
   --texto: #ece9f5;
   --texto-suave: #9d95b3;
+  --fonte-titulo: "Unbounded", "DM Sans", system-ui, sans-serif;
 }
 
 [data-bs-theme="dark"] {
@@ -30,6 +31,20 @@
 
 body {
   min-height: 100vh;
+  font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.modal-title,
+.titulo-secao,
+.carro h3,
+.carro .preco {
+  font-family: var(--fonte-titulo);
+}
+
+h1.h4, h2.h5, h3.h5, h3.h6 {
+  letter-spacing: -0.01em;
 }
 
 /* botões */
@@ -75,8 +90,9 @@ body {
 }
 
 .navbar-brand {
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
 }
 
 .navbar-brand::before {
@@ -161,38 +177,110 @@ body {
 
 /* página do cliente */
 .hero {
-  position: relative;
-  min-height: 340px;
-  display: flex;
-  align-items: flex-end;
-  background-size: cover;
-  background-position: center 60%;
-  border-bottom: 1px solid var(--roxo-escuro);
+  padding: 80px 0 64px;
+  background:
+    radial-gradient(55% 90% at 100% 0%, rgba(109, 40, 217, 0.32), transparent 70%),
+    var(--preto);
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(8, 6, 13, 0.92) 0%, rgba(8, 6, 13, 0.7) 45%, rgba(76, 29, 149, 0.35) 100%);
-}
-
-.hero .container {
-  position: relative;
-  padding-top: 48px;
-  padding-bottom: 40px;
+.hero-chamada {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 12px;
+  border: 1px solid var(--roxo-escuro);
+  border-radius: 999px;
+  color: var(--roxo-claro);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .hero h1 {
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-family: var(--fonte-titulo);
+  font-size: clamp(2.2rem, 6.5vw, 4.6rem);
   font-weight: 800;
-  line-height: 1.1;
-  max-width: 560px;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
 }
 
-.hero p {
-  max-width: 460px;
+.hero h1 .destaque {
+  background: linear-gradient(90deg, #c4b5fd, #8b5cf6 60%, #6d28d9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-texto {
+  max-width: 480px;
+  margin-bottom: 32px;
+  font-size: 1.1rem;
   color: #cfc8e2;
+}
+
+.numero {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.numero strong {
+  font-family: var(--fonte-titulo);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.numero span {
+  font-size: 0.8rem;
+  color: var(--texto-suave);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* faixa de nomes rolando */
+.faixa {
+  overflow: hidden;
+  padding: 14px 0;
+  background: #000;
+  border-top: 1px solid var(--borda);
+  border-bottom: 1px solid var(--roxo-escuro);
+}
+
+.trilho {
+  display: flex;
+  width: max-content;
+  animation: rolar 70s linear infinite;
+}
+
+.trilho span {
+  flex: none;
+  padding: 0 28px;
+  font-family: var(--fonte-titulo);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+}
+
+.trilho span::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 56px;
+  background: var(--roxo);
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+@keyframes rolar {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trilho { animation: none; }
 }
 
 .titulo-secao {
