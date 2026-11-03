@@ -19,6 +19,46 @@ body {
   border-style: dashed;
 }
 
+.item-galeria {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 0 1px #dee2e6;
+  height: 100%;
+}
+
+.item-galeria img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+  background: #e9ecef;
+}
+
+.item-galeria.ativo {
+  border-color: #212529;
+}
+
+.item-galeria.travado {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.item-galeria.travado.ativo {
+  opacity: 1;
+}
+
+.previa-carro img {
+  width: 100%;
+  height: 100%;
+  min-height: 160px;
+  max-height: 220px;
+  object-fit: cover;
+  background: #e9ecef;
+}
+
 .cartao-cadastro {
   max-width: 760px;
   margin: 32px auto;

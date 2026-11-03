@@ -30,6 +30,7 @@ async function carregar() {
     aviso('Não foi possível carregar os dados.', 'danger');
     return;
   }
+  desenharGaleria();
   desenharLista();
 }
 
@@ -76,6 +77,58 @@ function alternarBanco() {
   q('banco').classList.toggle('d-none', !q('comCredito').checked);
 }
 
+function desenharGaleria() {
+  q('galeria').innerHTML = automoveis.map((a) => `
+    <div class="col-6 col-md-4">
+      <div class="item-galeria" role="button" tabindex="0" data-carro="${a.id}">
+        <img src="${esc(a.foto)}" alt="${esc(a.marca + ' ' + a.modelo)}">
+        <div class="p-2 small lh-sm">
+          <strong>${esc(a.marca)} ${esc(a.modelo)}</strong><br>
+          <span class="text-secondary">${moeda(a.valorDiaria)}/dia</span>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+function atualizarPrevia() {
+  const a = achar(automoveis, q('automovel').value);
+  const travado = q('automovel').disabled;
+  document.querySelectorAll('.item-galeria').forEach((c) => {
+    c.classList.toggle('ativo', !!a && c.dataset.carro === String(a.id));
+    c.classList.toggle('travado', travado);
+  });
+  if (!a) {
+    q('previaCarro').innerHTML = '';
+    return;
+  }
+  q('previaCarro').innerHTML = `
+    <div class="row g-0">
+      <div class="col-md-5">
+        <img src="${esc(a.foto)}" alt="${esc(a.marca + ' ' + a.modelo)}">
+      </div>
+      <div class="col-md-7">
+        <div class="card-body py-2">
+          <h3 class="h6 mb-1">${esc(a.marca)} ${esc(a.modelo)}</h3>
+          <ul class="list-unstyled small mb-2">
+            <li>Ano: ${esc(a.ano)}</li>
+            <li>Placa: ${esc(a.placa)}</li>
+            <li>Matrícula: ${esc(a.matricula)}</li>
+            <li>Diária: ${moeda(a.valorDiaria)}</li>
+          </ul>
+          <p class="small text-secondary mb-1">${esc(a.descricao)}</p>
+          <a class="small" href="${esc(a.fonte)}" target="_blank" rel="noopener">Fonte: Wikipédia</a>
+        </div>
+      </div>
+    </div>`;
+}
+
+function escolherCarro(id) {
+  if (q('automovel').disabled) return;
+  q('automovel').value = id;
+  atualizarPrevia();
+  atualizarResumo();
+}
+
 function travarCampos(travar) {
   ['automovel', 'dataInicio', 'dataFim', 'propriedade', 'comCredito', 'banco'].forEach((id) => {
     q(id).disabled = travar;
@@ -109,6 +162,7 @@ function abrirModal(pedido) {
     parecer.classList.add('d-none');
   }
 
+  atualizarPrevia();
   atualizarResumo();
   modal.show();
 }
@@ -182,6 +236,19 @@ if (usuario) {
   q('formPedido').addEventListener('submit', salvarPedido);
   q('comCredito').addEventListener('change', alternarBanco);
   ['automovel', 'dataInicio', 'dataFim'].forEach((id) => q(id).addEventListener('change', atualizarResumo));
+  q('automovel').addEventListener('change', atualizarPrevia);
+
+  q('galeria').addEventListener('click', (e) => {
+    const item = e.target.closest('[data-carro]');
+    if (item) escolherCarro(item.dataset.carro);
+  });
+  q('galeria').addEventListener('keydown', (e) => {
+    const item = e.target.closest('[data-carro]');
+    if (item && (e.key === 'Enter' || e.key === ' ')) {
+      e.preventDefault();
+      escolherCarro(item.dataset.carro);
+    }
+  });
 
   q('listaPedidos').addEventListener('click', (e) => {
     const btn = e.target.closest('button[data-acao]');

@@ -4,7 +4,7 @@
 // alterações no localStorage do navegador.
 
 const API_URL = 'http://localhost:3000';
-const CHAVE_LOCAL = 'aluguel_db_v1';
+const CHAVE_LOCAL = 'aluguel_db_v2';
 
 const api = (() => {
   let modo = null;

@@ -11,8 +11,14 @@
       "endereco": "Rua das Acácias, 120 - Coração Eucarístico, Belo Horizonte/MG",
       "profissao": "Analista de sistemas",
       "empregadores": [
-        { "nome": "Tecnova Soluções", "rendimento": 6800 },
-        { "nome": "Freelas Digitais", "rendimento": 1500 }
+        {
+          "nome": "Tecnova Soluções",
+          "rendimento": 6800
+        },
+        {
+          "nome": "Freelas Digitais",
+          "rendimento": 1500
+        }
       ]
     },
     {
@@ -31,12 +37,78 @@
     }
   ],
   "automoveis": [
-    { "id": 1, "matricula": "MAT-0001", "ano": 2022, "marca": "Fiat", "modelo": "Argo 1.0", "placa": "QWE1A23", "valorDiaria": 140 },
-    { "id": 2, "matricula": "MAT-0002", "ano": 2023, "marca": "Volkswagen", "modelo": "Polo TSI", "placa": "RTY4B56", "valorDiaria": 190 },
-    { "id": 3, "matricula": "MAT-0003", "ano": 2021, "marca": "Chevrolet", "modelo": "Onix LT", "placa": "UIO7C89", "valorDiaria": 135 },
-    { "id": 4, "matricula": "MAT-0004", "ano": 2024, "marca": "Toyota", "modelo": "Corolla XEi", "placa": "ASD2D34", "valorDiaria": 290 },
-    { "id": 5, "matricula": "MAT-0005", "ano": 2022, "marca": "Hyundai", "modelo": "HB20 Comfort", "placa": "FGH5E67", "valorDiaria": 150 },
-    { "id": 6, "matricula": "MAT-0006", "ano": 2023, "marca": "Jeep", "modelo": "Renegade", "placa": "JKL8F90", "valorDiaria": 260 }
+    {
+      "id": 1,
+      "matricula": "MAT-0001",
+      "ano": 2022,
+      "marca": "Fiat",
+      "modelo": "Argo 1.0",
+      "placa": "QWE1A23",
+      "valorDiaria": 140,
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Fiat_Argo_2017b_%28cropped%29.jpg/500px-Fiat_Argo_2017b_%28cropped%29.jpg",
+      "descricao": "Argo é um automóvel hatch da Fiat, que foi lançado no Brasil no dia 31 de maio de 2017, para substituir o Punto, Bravo e o Palio. Seu nome remete ao mito grego de Jasão e os Argonautas que viajavam a bordo da nau Argo, construída pelo semideus Argos, sob orientação da deusa Atena.",
+      "fonte": "https://pt.wikipedia.org/wiki/Fiat_Argo"
+    },
+    {
+      "id": 2,
+      "matricula": "MAT-0002",
+      "ano": 2023,
+      "marca": "Volkswagen",
+      "modelo": "Polo TSI",
+      "placa": "RTY4B56",
+      "valorDiaria": 190,
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Volkswagen_Polo_VI_GTI_%282021%29_1X7A0344.jpg/500px-Volkswagen_Polo_VI_GTI_%282021%29_1X7A0344.jpg",
+      "descricao": "O Volkswagen Polo é um automóvel fabricado pela Volkswagen no Brasil desde 2002, e na Alemanha desde 1974.",
+      "fonte": "https://pt.wikipedia.org/wiki/Volkswagen_Polo"
+    },
+    {
+      "id": 3,
+      "matricula": "MAT-0003",
+      "ano": 2021,
+      "marca": "Chevrolet",
+      "modelo": "Onix LT",
+      "placa": "UIO7C89",
+      "valorDiaria": 135,
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Chevrolet_Onix_II_front_Brazil.jpg/500px-Chevrolet_Onix_II_front_Brazil.jpg",
+      "descricao": "Chevrolet Onix é um automóvel hatchback, sedan e notchback do segmento B, produzido pela Chevrolet; desenvolvido e fabricado pela General Motors do Brasil. Em 2013, foi apresentado no Salão do Automóvel de São Paulo, sendo uma das atrações da Chevrolet.",
+      "fonte": "https://pt.wikipedia.org/wiki/Chevrolet_Onix"
+    },
+    {
+      "id": 4,
+      "matricula": "MAT-0004",
+      "ano": 2024,
+      "marca": "Toyota",
+      "modelo": "Corolla XEi",
+      "placa": "ASD2D34",
+      "valorDiaria": 290,
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Toyota_Corolla_Limousine_Hybrid_Genf_2019_1Y7A5576.jpg/500px-Toyota_Corolla_Limousine_Hybrid_Genf_2019_1Y7A5576.jpg",
+      "descricao": "Toyota Corolla é um modelo de segmento C da Toyota oferecido em versões sedã, hatchback e perua. Também é o modelo mais vendido da história dos automóveis, com produção nos cinco continentes e vendas totais superiores a 50 milhões de automóveis desde seu lançamento, em 1966.",
+      "fonte": "https://pt.wikipedia.org/wiki/Toyota_Corolla"
+    },
+    {
+      "id": 5,
+      "matricula": "MAT-0005",
+      "ano": 2022,
+      "marca": "Hyundai",
+      "modelo": "HB20 Comfort",
+      "placa": "FGH5E67",
+      "valorDiaria": 150,
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/2023_Hyundai_HB20_1.0_T-GDi_Platinum_Plus_%28Brazil%29_front_view.png/500px-2023_Hyundai_HB20_1.0_T-GDi_Platinum_Plus_%28Brazil%29_front_view.png",
+      "descricao": "O HB20 é um hatch compacto do segmento B o primeiro carro popular da Hyundai fabricado no Brasil e cujo lançamento ocorreu no dia 12 de setembro de 2012.",
+      "fonte": "https://pt.wikipedia.org/wiki/Hyundai_HB20"
+    },
+    {
+      "id": 6,
+      "matricula": "MAT-0006",
+      "ano": 2023,
+      "marca": "Jeep",
+      "modelo": "Renegade",
+      "placa": "JKL8F90",
+      "valorDiaria": 260,
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Jeep_Renegade_4xe_1X7A6026.jpg/500px-Jeep_Renegade_4xe_1X7A6026.jpg",
+      "descricao": "O Renegade é um SUV crossover compacto, produzido pela Jeep, bandeira da Stellantis, lançado em 2014. É fabricado em Melfi e também em Rüsselsheim, e em Goiana, PE, Brasil, tendo sua produção começado em março de 2015.",
+      "fonte": "https://pt.wikipedia.org/wiki/Jeep_Renegade"
+    }
   ],
   "pedidos": [
     {
