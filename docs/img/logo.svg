@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Logo da Locadora do Dudu">
+  <rect width="120" height="120" rx="22" fill="#08060d"/>
+  <rect x="3" y="3" width="114" height="114" rx="20" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <path d="M22 70 L32 52 Q35 47 41 47 L79 47 Q85 47 88 52 L98 70 L98 80 Q98 83 95 83 L25 83 Q22 83 22 80 Z" fill="#8b5cf6"/>
+  <path d="M40 53 L80 53 L89 68 L31 68 Z" fill="#08060d" opacity="0.85"/>
+  <circle cx="38" cy="83" r="9" fill="#08060d" stroke="#c4b5fd" stroke-width="3"/>
+  <circle cx="82" cy="83" r="9" fill="#08060d" stroke="#c4b5fd" stroke-width="3"/>
+  <text x="60" y="108" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#c4b5fd" letter-spacing="2">DUDU</text>
+</svg>
