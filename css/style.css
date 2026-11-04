@@ -95,14 +95,16 @@ h1.h4, h2.h5, h3.h5, h3.h6 {
   letter-spacing: 0.01em;
 }
 
+/* mostra só o quadrado central do logo, sem o fundo desfocado da imagem */
 .navbar-brand::before {
   content: "";
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-right: 8px;
-  border-radius: 2px;
-  background: var(--roxo);
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 7px;
+  background: url("../docs/img/logo.webp") 50% 50% / 156% no-repeat;
 }
 
 /* cartões, tabelas e modais */

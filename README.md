@@ -16,7 +16,7 @@
     </td>
     <td>
       <div>
-        <img src="docs/img/logo.svg" alt="Logo da Locadora do Dudu" width="120px"/>
+        <img src="docs/img/logo.webp" alt="Logo da Locadora do Dudu" width="160px"/>
       </div>
     </td>
   </tr>
@@ -47,8 +47,6 @@
 - [Testes](#-testes)
 - [Documentações utilizadas](#-documentações-utilizadas)
 - [Autores](#-autores)
-- [Contribuição](#-contribuição)
-- [Agradecimentos](#-agradecimentos)
 - [Licença](#-licença)
 
 ---
@@ -312,24 +310,6 @@ O projeto não tem testes automatizados. A verificação foi feita manualmente, 
 | 👤 Nome | 🖼️ Foto | :octocat: GitHub |
 |---------|----------|-----------------|
 | Eduardo Augusto Freitas Nogueira | <div align="center"><img src="https://github.com/eduardoaugustofn.png?size=70" width="70px" height="70px" alt="Foto de Eduardo"></div> | <div align="center"><a href="https://github.com/eduardoaugustofn">eduardoaugustofn</a></div> |
-
----
-
-## 🤝 Contribuição
-
-1. Faça um `fork` do projeto.
-2. Crie uma branch para sua alteração (`git checkout -b feature/minha-feature`).
-3. Faça o commit (`git commit -m 'feat: descrição da alteração'`), seguindo o [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/).
-4. Envie a branch (`git push origin feature/minha-feature`).
-5. Abra um **Pull Request**.
-
----
-
-## 🙏 Agradecimentos
-
-* [**Engenharia de Software PUC Minas**](https://www.instagram.com/engsoftwarepucminas/) - Pelo apoio institucional e pela estrutura acadêmica.
-* [**Prof. Dr. João Paulo Aramuni**](https://github.com/joaopauloaramuni) - Pelo enunciado do laboratório, pelo template deste README e pelas aulas de Desenvolvimento de Interfaces Web.
-* **Wikimedia Commons e seus fotógrafos** - Pelas fotos dos carros sob licenças livres.
 
 ---
 
